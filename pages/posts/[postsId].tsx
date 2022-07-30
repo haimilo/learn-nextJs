@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import * as React from 'react'
 
@@ -9,6 +10,9 @@ export default function PostsById(props: PostsByIdProps) {
 		<div>
 			<h1>PostsById Page</h1>
 			<p>PostId: {routes.query.postsId}</p>
+			<button>
+				<Link href="/"> Home </Link>
+			</button>
 		</div>
 	)
 }
